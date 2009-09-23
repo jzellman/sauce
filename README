@@ -1,0 +1,24 @@
+Create a file app.py with the following:
+
+import urls
+from sauce import application
+
+if __name__ == "__main__":
+    application().run()
+
+
+Create a file called views.py/actions.py/etc. with your urls and actions like so:
+
+from sauce import get, post, delete, put
+import web
+
+@post("/users/([a-zA-Z_]*/")
+def save_user(username):
+    pass
+
+@get("/")
+def index():
+    pass
+
+
+
